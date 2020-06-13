@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="72" failures="0" name="runner.RunnerTest" time="0.019" errors="2" skipped="3">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk 8.0.252\jre\bin"/>
+    <property name="java.vm.version" value="25.252-b14"/>
+    <property name="jdk.vendor.version" value="Zulu 8.46.0.19-CA-win64"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\beatr\OneDrive\Área de Trabalho\Faculdade\Automação de testes\Aulas\IntegrationTestingJava"/>
+    <property name="java.vendor.url" value="http://www.azulsystems.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\beatr\OneDrive\Área de Trabalho\Faculdade\Automação de testes\Aulas\IntegrationTestingJava"/>
+    <property name="java.runtime.version" value="1.8.0_252-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jdk 8.0.252\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\beatr\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files (x86)\Java\jdk 8.0.252\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Tools\cmder\vendor\git-for-windows\usr\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Java\jdk 8.0.252\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\apache-maven-3.6.3\bin;C:\Ruby26-x64\bin;C:\Users\beatr\AppData\Local\Microsoft\WindowsApps;;C:\Users\beatr\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\beatr\AppData\Roaming\npm;C:\Users\beatr\.dotnet\tools;."/>
+    <property name="maven.conf" value="C:\Program Files\apache-maven-3.6.3\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\apache-maven-3.6.3\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\beatr"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="beatr"/>
+    <property name="java.class.path" value="C:\Program Files\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files (x86)\Java\jdk 8.0.252\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher verify"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="pt"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_252"/>
+    <property name="java.ext.dirs" value="C:\Program Files (x86)\Java\jdk 8.0.252\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files (x86)\Java\jdk 8.0.252\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk 8.0.252\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk 8.0.252\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk 8.0.252\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk 8.0.252\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk 8.0.252\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk 8.0.252\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk 8.0.252\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp850"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="maven.home" value="C:\Program Files\apache-maven-3.6.3\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://www.azulsystems.com/support/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp850"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="Given Cliente quer criar um novo usuario" time="0.002"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="And Informar o login com valor &quot;james&quot;" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="And Informar o full_name com valor &quot;jamesson&quot;" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="And Informar o email com valor &quot;jamesson@hotmail.com&quot;" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="And Informar o age com valor &quot;123&quot;" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="When Quando o cliente clicar em Salvar" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="Then Tem que exibir a mensagem &quot;Sucesso&quot;" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="Given Cliente quer criar um novo usuario" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="And Informar o login com valor &quot;james&quot;" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="And Informar o full_name com valor &quot;jamesson&quot;" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="And Informar o email com valor &quot;jamesson@hotmail.com&quot;" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="And Informar o age com valor &quot;123&quot;" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="When Quando o cliente clicar em Salvar" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="Then Tem que exibir a mensagem &quot;Sucesso&quot;" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="And usuario teve ver o login com valor &quot;james&quot;" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="And usuario teve ver o full_name com valor &quot;jamesson&quot;" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="Scenario: GET buscando o novo usuario" time="0.002"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="Given Cliente quer criar um novo usuario" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="And Informar o login com valor &quot;james&quot;" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="And Informar o full_name com valor &quot;jamesson&quot;" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="And Informar o email com valor &quot;jamesson@hotmail.com&quot;" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="And Informar o age com valor &quot;123&quot;" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="When Quando o cliente clicar em Salvar" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="Then Tem que exibir a mensagem &quot;Sucesso&quot;" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="Given Cliente quer criar um novo usuario" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="And Informar o login com valor &quot;james&quot;" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="And Informar o full_name com valor &quot;jamesson&quot;" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="And Informar o email com valor &quot;jamesson@hotmail.com&quot;" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="And Informar o age com valor &quot;123&quot;" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="When Quando o cliente clicar em Salvar" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="Then O cliente clicar em Deletar" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="Then Tem que exibir a mensagem &quot;no content&quot;" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="Scenario: DELLETE buscando o novo usuario" time="0"/>
+  <testcase classname="Scenario: POST Criando novo usuario" name="Given Cliente quer criar um novo usuario" time="0"/>
+  <testcase classname="Scenario: POST Criando novo usuario" name="And Informar o login com valor &quot;james&quot;" time="0"/>
+  <testcase classname="Scenario: POST Criando novo usuario" name="And Informar o full_name com valor &quot;jamesson&quot;" time="0"/>
+  <testcase classname="Scenario: POST Criando novo usuario" name="And Informar o email com valor &quot;jamesson@hotmail.com&quot;" time="0"/>
+  <testcase classname="Scenario: POST Criando novo usuario" name="And Informar o age com valor &quot;123&quot;" time="0"/>
+  <testcase classname="Scenario: POST Criando novo usuario" name="When Quando o cliente clicar em Salvar" time="0"/>
+  <testcase classname="Scenario: POST Criando novo usuario" name="Then Tem que exibir a mensagem &quot;Sucesso&quot;" time="0"/>
+  <testcase classname="Scenario: POST Criando novo usuario" name="Scenario: POST Criando novo usuario" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="Given Cliente quer criar um novo usuario" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="And Informar o login com valor &quot;james&quot;" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="And Informar o full_name com valor &quot;jamesson&quot;" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="And Informar o email com valor &quot;jamesson@hotmail.com&quot;" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="And Informar o age com valor &quot;123&quot;" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="When Quando o cliente clicar em Salvar" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="Then Tem que exibir a mensagem &quot;Sucesso&quot;" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="And usuario teve ver o login com valor &quot;james&quot;" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="And usuario teve ver o full_name com valor &quot;jamesson&quot;" time="0"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="Scenario: GET buscando o novo usuario" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="Given Cliente quer criar um novo usuario" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="And Informar o login com valor &quot;james&quot;" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="And Informar o full_name com valor &quot;jamesson&quot;" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="And Informar o email com valor &quot;jamesson@hotmail.com&quot;" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="And Informar o age com valor &quot;123&quot;" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="When Quando o cliente clicar em Salvar" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="Then O cliente clicar em Deletar" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="Then Tem que exibir a mensagem &quot;no content&quot;" time="0"/>
+  <testcase classname="Scenario: DELLETE buscando o novo usuario" name="Scenario: DELLETE buscando o novo usuario" time="0"/>
+  <testcase classname="Scenario: UPDATE buscando o novo usuario" name="Given Cliente quer criar um novo usuario" time="0"/>
+  <testcase classname="Scenario: UPDATE buscando o novo usuario" name="And Informar o login com valor &quot;james&quot;" time="0"/>
+  <testcase classname="Scenario: UPDATE buscando o novo usuario" name="And Informar o full_name com valor &quot;jamesson&quot;" time="0"/>
+  <testcase classname="Scenario: UPDATE buscando o novo usuario" name="And Informar o email com valor &quot;jamesson@hotmail.com&quot;" time="0"/>
+  <testcase classname="Scenario: UPDATE buscando o novo usuario" name="And Informar o age com valor &quot;123&quot;" time="0"/>
+  <testcase classname="Scenario: UPDATE buscando o novo usuario" name="When Quando o cliente clicar em Salvar" time="0"/>
+  <testcase classname="Scenario: UPDATE buscando o novo usuario" name="And Informar o login com valor &quot;jamesson&quot;" time="0"/>
+  <testcase classname="Scenario: UPDATE buscando o novo usuario" name="And o usuario clica em salvar novamente" time="0.003">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at steps.MyStepdefs.oUsuarioClicaEmSalvarNovamente(MyStepdefs.java:42)
+	at ✽.And o usuario clica em salvar novamente(user/crudUser.feature:43)
+</error>
+    <system-out>
+====================================
+
+METHOD: [ POST (Request) ]
+Endpoint: [ http://agapito-server.herokuapp.com/users/ ]
+Headers: [ Accept=application/json, application/javascript, text/javascript
+Content-Type=application/json; charset=UTF-8 ]
+Body - Request: [ {login=jamesson} ]
+
+------------------------------------
+
+METHOD: [ POST (Response) ]
+Status Code: [ 422 ]
+Response: [ {&quot;email&quot;:[&quot;can&apos;t be blank&quot;]} ]
+
+====================================
+</system-out>
+  </testcase>
+  <testcase classname="Scenario: UPDATE buscando o novo usuario" name="Scenario: UPDATE buscando o novo usuario" time="0.003">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at steps.MyStepdefs.oUsuarioClicaEmSalvarNovamente(MyStepdefs.java:42)
+	at ✽.And o usuario clica em salvar novamente(user/crudUser.feature:43)
+</error>
+  </testcase>
+  <testcase classname="Scenario: UPDATE buscando o novo usuario" name="And o usuario obtem a nova informacao" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: UPDATE buscando o novo usuario" name="Then Tem que exibir a mensagem &quot;Sucesso&quot;" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: UPDATE buscando o novo usuario" name="And user should see full_name with value &quot;Bug Luna da Silva Agapito Correa&quot;" time="0.003">
+    <skipped/>
+  </testcase>
+</testsuite>
