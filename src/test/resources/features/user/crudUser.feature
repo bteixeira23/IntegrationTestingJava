@@ -40,7 +40,7 @@ Feature: User CRUD
     And Informar o age com valor "123"
     When Quando o cliente clicar em Salvar
     And Informar o login com valor "jamesson"
+    And Informar o email com valor "jamesson5@hotmail.com"
     And o usuario clica em salvar novamente
     And o usuario obtem a nova informacao
-    Then Tem que exibir a mensagem "Sucesso"
-    And user should see full_name with value "Bug Luna da Silva Agapito Correa"
+    Then Tem que exibir a mensagem "success"

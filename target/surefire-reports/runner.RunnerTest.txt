@@ -1,14 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: runner.RunnerTest
 -------------------------------------------------------------------------------
-Tests run: 72, Failures: 0, Errors: 2, Skipped: 3, Time elapsed: 8.681 sec <<< FAILURE!
-And o usuario clica em salvar novamente(Scenario: UPDATE buscando o novo usuario)  Time elapsed: 0.003 sec  <<< ERROR!
-java.lang.NullPointerException
-	at steps.MyStepdefs.oUsuarioClicaEmSalvarNovamente(MyStepdefs.java:42)
-	at ?.And o usuario clica em salvar novamente(user/crudUser.feature:43)
-
-Scenario: UPDATE buscando o novo usuario  Time elapsed: 0.003 sec  <<< ERROR!
-java.lang.NullPointerException
-	at steps.MyStepdefs.oUsuarioClicaEmSalvarNovamente(MyStepdefs.java:42)
-	at ?.And o usuario clica em salvar novamente(user/crudUser.feature:43)
-
+Tests run: 72, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.063 sec

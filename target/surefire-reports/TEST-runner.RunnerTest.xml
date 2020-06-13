@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="72" failures="0" name="runner.RunnerTest" time="0.019" errors="2" skipped="3">
+<testsuite tests="72" failures="0" name="runner.RunnerTest" time="0.005" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk 8.0.252\jre\bin"/>
@@ -66,7 +66,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Scenario: GET buscando o novo usuario" name="Given Cliente quer criar um novo usuario" time="0.002"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="Given Cliente quer criar um novo usuario" time="0.003"/>
   <testcase classname="Scenario: GET buscando o novo usuario" name="And Informar o login com valor &quot;james&quot;" time="0"/>
   <testcase classname="Scenario: GET buscando o novo usuario" name="And Informar o full_name com valor &quot;jamesson&quot;" time="0"/>
   <testcase classname="Scenario: GET buscando o novo usuario" name="And Informar o email com valor &quot;jamesson@hotmail.com&quot;" time="0"/>
@@ -82,7 +82,7 @@
   <testcase classname="Scenario: GET buscando o novo usuario" name="Then Tem que exibir a mensagem &quot;Sucesso&quot;" time="0"/>
   <testcase classname="Scenario: GET buscando o novo usuario" name="And usuario teve ver o login com valor &quot;james&quot;" time="0"/>
   <testcase classname="Scenario: GET buscando o novo usuario" name="And usuario teve ver o full_name com valor &quot;jamesson&quot;" time="0"/>
-  <testcase classname="Scenario: GET buscando o novo usuario" name="Scenario: GET buscando o novo usuario" time="0.002"/>
+  <testcase classname="Scenario: GET buscando o novo usuario" name="Scenario: GET buscando o novo usuario" time="0"/>
   <testcase classname="Scenario: DELLETE buscando o novo usuario" name="Given Cliente quer criar um novo usuario" time="0"/>
   <testcase classname="Scenario: DELLETE buscando o novo usuario" name="And Informar o login com valor &quot;james&quot;" time="0"/>
   <testcase classname="Scenario: DELLETE buscando o novo usuario" name="And Informar o full_name com valor &quot;jamesson&quot;" time="0"/>
@@ -106,7 +106,7 @@
   <testcase classname="Scenario: POST Criando novo usuario" name="And Informar o age com valor &quot;123&quot;" time="0"/>
   <testcase classname="Scenario: POST Criando novo usuario" name="When Quando o cliente clicar em Salvar" time="0"/>
   <testcase classname="Scenario: POST Criando novo usuario" name="Then Tem que exibir a mensagem &quot;Sucesso&quot;" time="0"/>
-  <testcase classname="Scenario: POST Criando novo usuario" name="Scenario: POST Criando novo usuario" time="0"/>
+  <testcase classname="Scenario: POST Criando novo usuario" name="Scenario: POST Criando novo usuario" time="0.001"/>
   <testcase classname="Scenario: GET buscando o novo usuario" name="Given Cliente quer criar um novo usuario" time="0"/>
   <testcase classname="Scenario: GET buscando o novo usuario" name="And Informar o login com valor &quot;james&quot;" time="0"/>
   <testcase classname="Scenario: GET buscando o novo usuario" name="And Informar o full_name com valor &quot;jamesson&quot;" time="0"/>
@@ -133,42 +133,9 @@
   <testcase classname="Scenario: UPDATE buscando o novo usuario" name="And Informar o age com valor &quot;123&quot;" time="0"/>
   <testcase classname="Scenario: UPDATE buscando o novo usuario" name="When Quando o cliente clicar em Salvar" time="0"/>
   <testcase classname="Scenario: UPDATE buscando o novo usuario" name="And Informar o login com valor &quot;jamesson&quot;" time="0"/>
-  <testcase classname="Scenario: UPDATE buscando o novo usuario" name="And o usuario clica em salvar novamente" time="0.003">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at steps.MyStepdefs.oUsuarioClicaEmSalvarNovamente(MyStepdefs.java:42)
-	at ✽.And o usuario clica em salvar novamente(user/crudUser.feature:43)
-</error>
-    <system-out>
-====================================
-
-METHOD: [ POST (Request) ]
-Endpoint: [ http://agapito-server.herokuapp.com/users/ ]
-Headers: [ Accept=application/json, application/javascript, text/javascript
-Content-Type=application/json; charset=UTF-8 ]
-Body - Request: [ {login=jamesson} ]
-
-------------------------------------
-
-METHOD: [ POST (Response) ]
-Status Code: [ 422 ]
-Response: [ {&quot;email&quot;:[&quot;can&apos;t be blank&quot;]} ]
-
-====================================
-</system-out>
-  </testcase>
-  <testcase classname="Scenario: UPDATE buscando o novo usuario" name="Scenario: UPDATE buscando o novo usuario" time="0.003">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at steps.MyStepdefs.oUsuarioClicaEmSalvarNovamente(MyStepdefs.java:42)
-	at ✽.And o usuario clica em salvar novamente(user/crudUser.feature:43)
-</error>
-  </testcase>
-  <testcase classname="Scenario: UPDATE buscando o novo usuario" name="And o usuario obtem a nova informacao" time="0.003">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: UPDATE buscando o novo usuario" name="Then Tem que exibir a mensagem &quot;Sucesso&quot;" time="0.003">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: UPDATE buscando o novo usuario" name="And user should see full_name with value &quot;Bug Luna da Silva Agapito Correa&quot;" time="0.003">
-    <skipped/>
-  </testcase>
+  <testcase classname="Scenario: UPDATE buscando o novo usuario" name="And Informar o email com valor &quot;jamesson5@hotmail.com&quot;" time="0"/>
+  <testcase classname="Scenario: UPDATE buscando o novo usuario" name="And o usuario clica em salvar novamente" time="0"/>
+  <testcase classname="Scenario: UPDATE buscando o novo usuario" name="And o usuario obtem a nova informacao" time="0"/>
+  <testcase classname="Scenario: UPDATE buscando o novo usuario" name="Then Tem que exibir a mensagem &quot;success&quot;" time="0"/>
+  <testcase classname="Scenario: UPDATE buscando o novo usuario" name="Scenario: UPDATE buscando o novo usuario" time="0.001"/>
 </testsuite>
