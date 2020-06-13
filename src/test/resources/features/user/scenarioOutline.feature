@@ -1,11 +1,15 @@
 @outline
 Feature: User Outline
 
-  Scenario: POST Criando novo usuario
+  Scenario Outline: Salve um usuario com post teste
     Given Cliente quer criar um novo usuario
-    And Login tem que ser "james"
-    And Tem que ter o nome "Jamesson Sena"
-    And Tem que ter o email "jamesson@hotmail.com"
-    And Sua idade tem que ser "28"
-    When Quando o cliente clicar em "save"
-    Then Tem que exibir a mensagem "Sucesso"
+    And Informar o login com valor "james"
+    And Informar o full_name com valor "jamesson"
+    And Informar o email com valor "jamesson@hotmail.com"
+    And Informar o age com valor "123"
+    When Quando o cliente clicar em Salvar
+    Then Tem que exibir a mensagem "<response>"
+
+    Examples:
+      |response  |
+      |Sucesso   |

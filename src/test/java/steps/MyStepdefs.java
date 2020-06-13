@@ -35,4 +35,18 @@ public class MyStepdefs {
     public void oClienteClicarEmDeletar() {
         RESTSupport.executeDelete(AgapitoServer.getEndPoint() + AgapitoServer.getLastUser() + ".json");
     }
+
+    @And("^o usuario clica em salvar novamente$")
+    public void oUsuarioClicaEmSalvarNovamente() {
+        RESTSupport.executePost(AgapitoServer.getEndPoint(),AgapitoServer.getFields());
+        AgapitoServer.setLastUser(RESTSupport.key("id").toString());
+        AgapitoServer.clearFields();
+    }
+
+
+    @And("^o usuario obtem a nova informacao$")
+    public void oUsuarioObtemANovaInformacao() {
+        RESTSupport.executeGet(AgapitoServer.getEndPoint() + AgapitoServer.getLastUser() + ".json");
+
+    }
 }
