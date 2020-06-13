@@ -30,4 +30,9 @@ public class MyStepdefs {
     @And("^usuario teve ver o (.*) com valor \"([^\"]*)\"$")
     public void usuarioTeveVerOLoginComValor(String key, String value) throws Throwable {
         Assert.assertEquals(value, RESTSupport.key(key));  }
+
+    @Then("^O cliente clicar em Deletar$")
+    public void oClienteClicarEmDeletar() {
+        RESTSupport.executeDelete(AgapitoServer.getEndPoint() + AgapitoServer.getLastUser() + ".json");
+    }
 }
