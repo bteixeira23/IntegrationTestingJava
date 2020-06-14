@@ -1,0 +1,1794 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 95604500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Cliente quer criar um novo usuario",
+            "match": {
+              "location": "MyStepdefs.clienteQuerCriarUmNovoUsuario()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2169700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Informar o login com valor \"james\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "login",
+                  "offset": 11
+                },
+                {
+                  "val": "james",
+                  "offset": 28
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 60100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Informar o full_name com valor \"jamesson\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "full_name",
+                  "offset": 11
+                },
+                {
+                  "val": "jamesson",
+                  "offset": 32
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Informar o email com valor \"jamesson@hotmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "email",
+                  "offset": 11
+                },
+                {
+                  "val": "jamesson@hotmail.com",
+                  "offset": 28
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Informar o age com valor \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "age",
+                  "offset": 11
+                },
+                {
+                  "val": "123",
+                  "offset": 26
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "METHOD: [ POST (Request) ]",
+              "Endpoint: [ http://agapito-server.herokuapp.com/users/ ]",
+              "Headers: [ Accept\u003dapplication/json, application/javascript, text/javascript\nContent-Type\u003dapplication/json; charset\u003dUTF-8 ]",
+              "Body - Request: [ {age\u003d123, email\u003djamesson@hotmail.com, full_name\u003djamesson, login\u003djames} ]",
+              "------------------------------------",
+              "METHOD: [ POST (Response) ]",
+              "Status Code: [ 201 ]",
+              "Response: [ {\"id\":1226,\"login\":\"james\",\"full_name\":\"jamesson\",\"email\":\"jamesson@hotmail.com\",\"age\":123,\"created_at\":\"2020-06-13T23:59:50.597Z\",\"updated_at\":\"2020-06-13T23:59:50.597Z\"} ]",
+              ""
+            ],
+            "result": {
+              "duration": 3014938200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Quando o cliente clicar em Salvar",
+            "match": {
+              "location": "MyStepdefs.quandoOClienteClicarEmSalvar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2426400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Tem que exibir a mensagem \"Sucesso\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sucesso",
+                  "offset": 27
+                }
+              ],
+              "location": "GeneralSteps.temQueExibirAMensagem(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 93000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "GET buscando o novo usuario",
+        "description": "",
+        "id": "user-background;get-buscando-o-novo-usuario",
+        "after": [
+          {
+            "result": {
+              "duration": 116300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 22100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Cliente quer criar um novo usuario",
+            "match": {
+              "location": "MyStepdefs.clienteQuerCriarUmNovoUsuario()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 108900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Informar o login com valor \"james\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "login",
+                  "offset": 11
+                },
+                {
+                  "val": "james",
+                  "offset": 28
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Informar o full_name com valor \"jamesson\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "full_name",
+                  "offset": 11
+                },
+                {
+                  "val": "jamesson",
+                  "offset": 32
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Informar o email com valor \"jamesson@hotmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "email",
+                  "offset": 11
+                },
+                {
+                  "val": "jamesson@hotmail.com",
+                  "offset": 28
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Informar o age com valor \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "age",
+                  "offset": 11
+                },
+                {
+                  "val": "123",
+                  "offset": 26
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "METHOD: [ POST (Request) ]",
+              "Endpoint: [ http://agapito-server.herokuapp.com/users/ ]",
+              "Headers: [ Accept\u003dapplication/json, application/javascript, text/javascript\nContent-Type\u003dapplication/json; charset\u003dUTF-8 ]",
+              "Body - Request: [ {age\u003d123, email\u003djamesson@hotmail.com, full_name\u003djamesson, login\u003djames} ]",
+              "------------------------------------",
+              "METHOD: [ POST (Response) ]",
+              "Status Code: [ 201 ]",
+              "Response: [ {\"id\":1227,\"login\":\"james\",\"full_name\":\"jamesson\",\"email\":\"jamesson@hotmail.com\",\"age\":123,\"created_at\":\"2020-06-13T23:59:51.799Z\",\"updated_at\":\"2020-06-13T23:59:51.799Z\"} ]",
+              ""
+            ],
+            "result": {
+              "duration": 569217200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Quando o cliente clicar em Salvar",
+            "match": {
+              "location": "MyStepdefs.quandoOClienteClicarEmSalvar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 120800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Tem que exibir a mensagem \"Sucesso\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sucesso",
+                  "offset": 27
+                }
+              ],
+              "location": "GeneralSteps.temQueExibirAMensagem(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12005600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "usuario teve ver o login com valor \"james\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "login",
+                  "offset": 19
+                },
+                {
+                  "val": "james",
+                  "offset": 36
+                }
+              ],
+              "location": "MyStepdefs.usuarioTeveVerOLoginComValor(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11590200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "usuario teve ver o full_name com valor \"jamesson\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "full_name",
+                  "offset": 19
+                },
+                {
+                  "val": "jamesson",
+                  "offset": 40
+                }
+              ],
+              "location": "MyStepdefs.usuarioTeveVerOLoginComValor(String,String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 33500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Cliente quer criar um novo usuario",
+            "match": {
+              "location": "MyStepdefs.clienteQuerCriarUmNovoUsuario()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 77900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Informar o login com valor \"james\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "login",
+                  "offset": 11
+                },
+                {
+                  "val": "james",
+                  "offset": 28
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Informar o full_name com valor \"jamesson\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "full_name",
+                  "offset": 11
+                },
+                {
+                  "val": "jamesson",
+                  "offset": 32
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Informar o email com valor \"jamesson@hotmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "email",
+                  "offset": 11
+                },
+                {
+                  "val": "jamesson@hotmail.com",
+                  "offset": 28
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 81600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Informar o age com valor \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "age",
+                  "offset": 11
+                },
+                {
+                  "val": "123",
+                  "offset": 26
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "METHOD: [ POST (Request) ]",
+              "Endpoint: [ http://agapito-server.herokuapp.com/users/ ]",
+              "Headers: [ Accept\u003dapplication/json, application/javascript, text/javascript\nContent-Type\u003dapplication/json; charset\u003dUTF-8 ]",
+              "Body - Request: [ {age\u003d123, email\u003djamesson@hotmail.com, full_name\u003djamesson, login\u003djames} ]",
+              "------------------------------------",
+              "METHOD: [ POST (Response) ]",
+              "Status Code: [ 201 ]",
+              "Response: [ {\"id\":1228,\"login\":\"james\",\"full_name\":\"jamesson\",\"email\":\"jamesson@hotmail.com\",\"age\":123,\"created_at\":\"2020-06-13T23:59:52.420Z\",\"updated_at\":\"2020-06-13T23:59:52.420Z\"} ]",
+              ""
+            ],
+            "result": {
+              "duration": 579266600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Quando o cliente clicar em Salvar",
+            "match": {
+              "location": "MyStepdefs.quandoOClienteClicarEmSalvar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 104500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Tem que exibir a mensagem \"Sucesso\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sucesso",
+                  "offset": 27
+                }
+              ],
+              "location": "GeneralSteps.temQueExibirAMensagem(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 66000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "DELLETE buscando o novo usuario",
+        "description": "",
+        "id": "user-background;dellete-buscando-o-novo-usuario",
+        "after": [
+          {
+            "result": {
+              "duration": 14900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 45000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Cliente quer criar um novo usuario",
+            "match": {
+              "location": "MyStepdefs.clienteQuerCriarUmNovoUsuario()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 149300,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Informar o login com valor \"james\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "login",
+                  "offset": 11
+                },
+                {
+                  "val": "james",
+                  "offset": 28
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 79600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Informar o full_name com valor \"jamesson\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "full_name",
+                  "offset": 11
+                },
+                {
+                  "val": "jamesson",
+                  "offset": 32
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72500,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Informar o email com valor \"jamesson@hotmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "email",
+                  "offset": 11
+                },
+                {
+                  "val": "jamesson@hotmail.com",
+                  "offset": 28
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 450000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Informar o age com valor \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "age",
+                  "offset": 11
+                },
+                {
+                  "val": "123",
+                  "offset": 26
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "METHOD: [ POST (Request) ]",
+              "Endpoint: [ http://agapito-server.herokuapp.com/users/ ]",
+              "Headers: [ Accept\u003dapplication/json, application/javascript, text/javascript\nContent-Type\u003dapplication/json; charset\u003dUTF-8 ]",
+              "Body - Request: [ {age\u003d123, email\u003djamesson@hotmail.com, full_name\u003djamesson, login\u003djames} ]",
+              "------------------------------------",
+              "METHOD: [ POST (Response) ]",
+              "Status Code: [ 201 ]",
+              "Response: [ {\"id\":1229,\"login\":\"james\",\"full_name\":\"jamesson\",\"email\":\"jamesson@hotmail.com\",\"age\":123,\"created_at\":\"2020-06-13T23:59:53.028Z\",\"updated_at\":\"2020-06-13T23:59:53.028Z\"} ]",
+              ""
+            ],
+            "result": {
+              "duration": 607017200,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Quando o cliente clicar em Salvar",
+            "match": {
+              "location": "MyStepdefs.quandoOClienteClicarEmSalvar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "METHOD: [ DELETE (Request) ]",
+              "Endpoint: [ http://agapito-server.herokuapp.com/users/1229.json ]",
+              "Headers: [ Accept\u003dapplication/json, application/javascript, text/javascript\nContent-Type\u003dapplication/json; charset\u003dUTF-8 ]",
+              "Body - Request: [  ]",
+              "------------------------------------",
+              "METHOD: [ DELETE (Response) ]",
+              "Status Code: [ 204 ]",
+              "Response: [  ]",
+              ""
+            ],
+            "result": {
+              "duration": 604197200,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "O cliente clicar em Deletar",
+            "match": {
+              "location": "MyStepdefs.oClienteClicarEmDeletar()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 85700,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Tem que exibir a mensagem \"no content\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "no content",
+                  "offset": 27
+                }
+              ],
+              "location": "GeneralSteps.temQueExibirAMensagem(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User Background",
+    "description": "",
+    "id": "user-background",
+    "keyword": "Feature",
+    "uri": "user/background.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@background"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 19800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "POST Criando novo usuario",
+        "description": "",
+        "id": "user-crud;post-criando-novo-usuario",
+        "after": [
+          {
+            "result": {
+              "duration": 11700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 23300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Cliente quer criar um novo usuario",
+            "match": {
+              "location": "MyStepdefs.clienteQuerCriarUmNovoUsuario()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 119300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Informar o login com valor \"james\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "login",
+                  "offset": 11
+                },
+                {
+                  "val": "james",
+                  "offset": 28
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Informar o full_name com valor \"jamesson\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "full_name",
+                  "offset": 11
+                },
+                {
+                  "val": "jamesson",
+                  "offset": 32
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 76600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Informar o email com valor \"jamesson@hotmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "email",
+                  "offset": 11
+                },
+                {
+                  "val": "jamesson@hotmail.com",
+                  "offset": 28
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Informar o age com valor \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "age",
+                  "offset": 11
+                },
+                {
+                  "val": "123",
+                  "offset": 26
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "METHOD: [ POST (Request) ]",
+              "Endpoint: [ http://agapito-server.herokuapp.com/users/ ]",
+              "Headers: [ Accept\u003dapplication/json, application/javascript, text/javascript\nContent-Type\u003dapplication/json; charset\u003dUTF-8 ]",
+              "Body - Request: [ {age\u003d123, email\u003djamesson@hotmail.com, full_name\u003djamesson, login\u003djames} ]",
+              "------------------------------------",
+              "METHOD: [ POST (Response) ]",
+              "Status Code: [ 201 ]",
+              "Response: [ {\"id\":1230,\"login\":\"james\",\"full_name\":\"jamesson\",\"email\":\"jamesson@hotmail.com\",\"age\":123,\"created_at\":\"2020-06-13T23:59:54.053Z\",\"updated_at\":\"2020-06-13T23:59:54.053Z\"} ]",
+              ""
+            ],
+            "result": {
+              "duration": 413631900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Quando o cliente clicar em Salvar",
+            "match": {
+              "location": "MyStepdefs.quandoOClienteClicarEmSalvar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 164100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Tem que exibir a mensagem \"Sucesso\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sucesso",
+                  "offset": 27
+                }
+              ],
+              "location": "GeneralSteps.temQueExibirAMensagem(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 26000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "GET buscando o novo usuario",
+        "description": "",
+        "id": "user-crud;get-buscando-o-novo-usuario",
+        "after": [
+          {
+            "result": {
+              "duration": 10900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 31000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Cliente quer criar um novo usuario",
+            "match": {
+              "location": "MyStepdefs.clienteQuerCriarUmNovoUsuario()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 75000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Informar o login com valor \"james\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "login",
+                  "offset": 11
+                },
+                {
+                  "val": "james",
+                  "offset": 28
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Informar o full_name com valor \"jamesson\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "full_name",
+                  "offset": 11
+                },
+                {
+                  "val": "jamesson",
+                  "offset": 32
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Informar o email com valor \"jamesson@hotmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "email",
+                  "offset": 11
+                },
+                {
+                  "val": "jamesson@hotmail.com",
+                  "offset": 28
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Informar o age com valor \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "age",
+                  "offset": 11
+                },
+                {
+                  "val": "123",
+                  "offset": 26
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "METHOD: [ POST (Request) ]",
+              "Endpoint: [ http://agapito-server.herokuapp.com/users/ ]",
+              "Headers: [ Accept\u003dapplication/json, application/javascript, text/javascript\nContent-Type\u003dapplication/json; charset\u003dUTF-8 ]",
+              "Body - Request: [ {age\u003d123, email\u003djamesson@hotmail.com, full_name\u003djamesson, login\u003djames} ]",
+              "------------------------------------",
+              "METHOD: [ POST (Response) ]",
+              "Status Code: [ 201 ]",
+              "Response: [ {\"id\":1231,\"login\":\"james\",\"full_name\":\"jamesson\",\"email\":\"jamesson@hotmail.com\",\"age\":123,\"created_at\":\"2020-06-13T23:59:54.462Z\",\"updated_at\":\"2020-06-13T23:59:54.462Z\"} ]",
+              ""
+            ],
+            "result": {
+              "duration": 411908600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Quando o cliente clicar em Salvar",
+            "match": {
+              "location": "MyStepdefs.quandoOClienteClicarEmSalvar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 63700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Tem que exibir a mensagem \"Sucesso\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sucesso",
+                  "offset": 27
+                }
+              ],
+              "location": "GeneralSteps.temQueExibirAMensagem(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8773700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "usuario teve ver o login com valor \"james\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "login",
+                  "offset": 19
+                },
+                {
+                  "val": "james",
+                  "offset": 36
+                }
+              ],
+              "location": "MyStepdefs.usuarioTeveVerOLoginComValor(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8400900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "usuario teve ver o full_name com valor \"jamesson\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "full_name",
+                  "offset": 19
+                },
+                {
+                  "val": "jamesson",
+                  "offset": 40
+                }
+              ],
+              "location": "MyStepdefs.usuarioTeveVerOLoginComValor(String,String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 16700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "DELLETE buscando o novo usuario",
+        "description": "",
+        "id": "user-crud;dellete-buscando-o-novo-usuario",
+        "after": [
+          {
+            "result": {
+              "duration": 13600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 23300,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Cliente quer criar um novo usuario",
+            "match": {
+              "location": "MyStepdefs.clienteQuerCriarUmNovoUsuario()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 74700,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Informar o login com valor \"james\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "login",
+                  "offset": 11
+                },
+                {
+                  "val": "james",
+                  "offset": 28
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Informar o full_name com valor \"jamesson\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "full_name",
+                  "offset": 11
+                },
+                {
+                  "val": "jamesson",
+                  "offset": 32
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38100,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Informar o email com valor \"jamesson@hotmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "email",
+                  "offset": 11
+                },
+                {
+                  "val": "jamesson@hotmail.com",
+                  "offset": 28
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26700,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Informar o age com valor \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "age",
+                  "offset": 11
+                },
+                {
+                  "val": "123",
+                  "offset": 26
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "METHOD: [ POST (Request) ]",
+              "Endpoint: [ http://agapito-server.herokuapp.com/users/ ]",
+              "Headers: [ Accept\u003dapplication/json, application/javascript, text/javascript\nContent-Type\u003dapplication/json; charset\u003dUTF-8 ]",
+              "Body - Request: [ {age\u003d123, email\u003djamesson@hotmail.com, full_name\u003djamesson, login\u003djames} ]",
+              "------------------------------------",
+              "METHOD: [ POST (Response) ]",
+              "Status Code: [ 201 ]",
+              "Response: [ {\"id\":1232,\"login\":\"james\",\"full_name\":\"jamesson\",\"email\":\"jamesson@hotmail.com\",\"age\":123,\"created_at\":\"2020-06-13T23:59:55.075Z\",\"updated_at\":\"2020-06-13T23:59:55.075Z\"} ]",
+              ""
+            ],
+            "result": {
+              "duration": 590260900,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Quando o cliente clicar em Salvar",
+            "match": {
+              "location": "MyStepdefs.quandoOClienteClicarEmSalvar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "METHOD: [ DELETE (Request) ]",
+              "Endpoint: [ http://agapito-server.herokuapp.com/users/1232.json ]",
+              "Headers: [ Accept\u003dapplication/json, application/javascript, text/javascript\nContent-Type\u003dapplication/json; charset\u003dUTF-8 ]",
+              "Body - Request: [  ]",
+              "------------------------------------",
+              "METHOD: [ DELETE (Response) ]",
+              "Status Code: [ 204 ]",
+              "Response: [  ]",
+              ""
+            ],
+            "result": {
+              "duration": 397057700,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "O cliente clicar em Deletar",
+            "match": {
+              "location": "MyStepdefs.oClienteClicarEmDeletar()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 168100,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Tem que exibir a mensagem \"no content\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "no content",
+                  "offset": 27
+                }
+              ],
+              "location": "GeneralSteps.temQueExibirAMensagem(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 19900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "UPDATE buscando o novo usuario",
+        "description": "",
+        "id": "user-crud;update-buscando-o-novo-usuario",
+        "after": [
+          {
+            "result": {
+              "duration": 18400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 45600,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Cliente quer criar um novo usuario",
+            "match": {
+              "location": "MyStepdefs.clienteQuerCriarUmNovoUsuario()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 57600,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Informar o login com valor \"james\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "login",
+                  "offset": 11
+                },
+                {
+                  "val": "james",
+                  "offset": 28
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50600,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Informar o full_name com valor \"jamesson\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "full_name",
+                  "offset": 11
+                },
+                {
+                  "val": "jamesson",
+                  "offset": 32
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41800,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Informar o email com valor \"jamesson@hotmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "email",
+                  "offset": 11
+                },
+                {
+                  "val": "jamesson@hotmail.com",
+                  "offset": 28
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Informar o age com valor \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "age",
+                  "offset": 11
+                },
+                {
+                  "val": "123",
+                  "offset": 26
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "METHOD: [ POST (Request) ]",
+              "Endpoint: [ http://agapito-server.herokuapp.com/users/ ]",
+              "Headers: [ Accept\u003dapplication/json, application/javascript, text/javascript\nContent-Type\u003dapplication/json; charset\u003dUTF-8 ]",
+              "Body - Request: [ {age\u003d123, email\u003djamesson@hotmail.com, full_name\u003djamesson, login\u003djames} ]",
+              "------------------------------------",
+              "METHOD: [ POST (Response) ]",
+              "Status Code: [ 201 ]",
+              "Response: [ {\"id\":1233,\"login\":\"james\",\"full_name\":\"jamesson\",\"email\":\"jamesson@hotmail.com\",\"age\":123,\"created_at\":\"2020-06-13T23:59:55.901Z\",\"updated_at\":\"2020-06-13T23:59:55.901Z\"} ]",
+              ""
+            ],
+            "result": {
+              "duration": 417122200,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Quando o cliente clicar em Salvar",
+            "match": {
+              "location": "MyStepdefs.quandoOClienteClicarEmSalvar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 64700,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Informar o login com valor \"jamesson\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "login",
+                  "offset": 11
+                },
+                {
+                  "val": "jamesson",
+                  "offset": 28
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "Informar o email com valor \"jamesson5@hotmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "email",
+                  "offset": 11
+                },
+                {
+                  "val": "jamesson5@hotmail.com",
+                  "offset": 28
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "METHOD: [ POST (Request) ]",
+              "Endpoint: [ http://agapito-server.herokuapp.com/users/ ]",
+              "Headers: [ Accept\u003dapplication/json, application/javascript, text/javascript\nContent-Type\u003dapplication/json; charset\u003dUTF-8 ]",
+              "Body - Request: [ {email\u003djamesson5@hotmail.com, login\u003djamesson} ]",
+              "------------------------------------",
+              "METHOD: [ POST (Response) ]",
+              "Status Code: [ 201 ]",
+              "Response: [ {\"id\":1234,\"login\":\"jamesson\",\"full_name\":null,\"email\":\"jamesson5@hotmail.com\",\"age\":null,\"created_at\":\"2020-06-13T23:59:56.518Z\",\"updated_at\":\"2020-06-13T23:59:56.518Z\"} ]",
+              ""
+            ],
+            "result": {
+              "duration": 617145900,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "o usuario clica em salvar novamente",
+            "match": {
+              "location": "MyStepdefs.oUsuarioClicaEmSalvarNovamente()"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "METHOD: [ GET (Request) ]",
+              "Endpoint: [ http://agapito-server.herokuapp.com/users/1234.json ]",
+              "Headers: [ Accept\u003dapplication/json, application/javascript, text/javascript\nContent-Type\u003dapplication/json; charset\u003dUTF-8 ]",
+              "Body - Request: [  ]",
+              "------------------------------------",
+              "METHOD: [ GET (Response) ]",
+              "Status Code: [ 200 ]",
+              "Response: [ {\"id\":1234,\"login\":\"jamesson\",\"full_name\":null,\"email\":\"jamesson5@hotmail.com\",\"age\":null,\"created_at\":\"2020-06-13T23:59:56.518Z\",\"updated_at\":\"2020-06-13T23:59:56.518Z\"} ]",
+              ""
+            ],
+            "result": {
+              "duration": 597989700,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "o usuario obtem a nova informacao",
+            "match": {
+              "location": "MyStepdefs.oUsuarioObtemANovaInformacao()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 225100,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Tem que exibir a mensagem \"success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "success",
+                  "offset": 27
+                }
+              ],
+              "location": "GeneralSteps.temQueExibirAMensagem(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User CRUD",
+    "description": "",
+    "id": "user-crud",
+    "keyword": "Feature",
+    "uri": "user/crudUser.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@crud"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 31300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Salve um usuario com post teste",
+        "description": "",
+        "id": "user-outline;salve-um-usuario-com-post-teste;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 10600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 49100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Cliente quer criar um novo usuario",
+            "match": {
+              "location": "MyStepdefs.clienteQuerCriarUmNovoUsuario()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 126100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Informar o login com valor \"james\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "login",
+                  "offset": 11
+                },
+                {
+                  "val": "james",
+                  "offset": 28
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Informar o full_name com valor \"jamesson\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "full_name",
+                  "offset": 11
+                },
+                {
+                  "val": "jamesson",
+                  "offset": 32
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Informar o email com valor \"jamesson@hotmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "email",
+                  "offset": 11
+                },
+                {
+                  "val": "jamesson@hotmail.com",
+                  "offset": 28
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Informar o age com valor \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "age",
+                  "offset": 11
+                },
+                {
+                  "val": "123",
+                  "offset": 26
+                }
+              ],
+              "location": "MyStepdefs.loginTemQueSer(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "METHOD: [ POST (Request) ]",
+              "Endpoint: [ http://agapito-server.herokuapp.com/users/ ]",
+              "Headers: [ Accept\u003dapplication/json, application/javascript, text/javascript\nContent-Type\u003dapplication/json; charset\u003dUTF-8 ]",
+              "Body - Request: [ {age\u003d123, email\u003djamesson@hotmail.com, full_name\u003djamesson, login\u003djames} ]",
+              "------------------------------------",
+              "METHOD: [ POST (Response) ]",
+              "Status Code: [ 201 ]",
+              "Response: [ {\"id\":1235,\"login\":\"james\",\"full_name\":\"jamesson\",\"email\":\"jamesson@hotmail.com\",\"age\":123,\"created_at\":\"2020-06-13T23:59:57.535Z\",\"updated_at\":\"2020-06-13T23:59:57.535Z\"} ]",
+              ""
+            ],
+            "result": {
+              "duration": 385484000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Quando o cliente clicar em Salvar",
+            "match": {
+              "location": "MyStepdefs.quandoOClienteClicarEmSalvar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 167600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Tem que exibir a mensagem \"Sucesso\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sucesso",
+                  "offset": 27
+                }
+              ],
+              "location": "GeneralSteps.temQueExibirAMensagem(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@outline"
+          }
+        ]
+      }
+    ],
+    "name": "User Outline",
+    "description": "",
+    "id": "user-outline",
+    "keyword": "Feature",
+    "uri": "user/scenarioOutline.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@outline"
+      }
+    ]
+  }
+]

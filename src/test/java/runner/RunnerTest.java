@@ -6,6 +6,6 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = {"src/test/resources/features"}, plugin = {"json:target/reports/CucumberReport.json"},
-        glue = "steps", tags = {"~@ignore", "@crud, @background, @scenarioOutline"})
+        glue = "steps", tags = {"~@ignore", "@crud, @background, @outline"})
 public class RunnerTest {
 }
